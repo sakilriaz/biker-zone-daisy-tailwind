@@ -15,6 +15,7 @@
 
 <style>
     .font-poppins { font-family: "Poppins", serif;}
+    
 </style>
 <script>
     tailwind.config = {
@@ -24,6 +25,7 @@
             clifford: '#da373d',
             'bike-primary': '#E76F51',
             'bike-primary-bg': 'rgba(231, 111, 81, 0.1)',
+            'primary-color': 'rgb(35, 166, 240)',
           }
         }
       }
@@ -245,8 +247,53 @@
 
      <!-- happy client section -->
       <section></section>
+    
 
       <!-- FAQs section + Accordion-->
+       <section class="my-24">
+        <h2 class="text-5xl font-bold text-center mb-12">Frequently Asked <span class="text-bike-primary"> Questions</span></h2>
+        <div class="hero ">
+            <div class="hero-content flex-col lg:flex-row">
+              <img
+                src="./images/others/faq.png"
+                class="max-w-sm rounded-lg shadow-2xl" />
+            <div class="space-y-5">
+                  <div class="collapse collapse-arrow border border-blue-100 ">
+                    <input type="radio" name="my-accordion-2" checked="checked" />
+                    <div class="collapse-title text-xl font-medium">What are the most important things I should
+                        know about riding a bike?</div>
+                    <div class="collapse-content">
+                      <p>Safety First! Always obey the rules of the road. Obey all traffic signals, signs, and laws. Get in the mindset of “driving” your bike—not just “riding” your bike. This will help you be a more focused and legally compliant bike rider. </p>
+                    </div>
+                  </div>
+                  <div class="collapse collapse-arrow border border-blue-100 ">
+                    <input type="radio" name="my-accordion-2" />
+                    <div class="collapse-title text-xl font-medium">How can I tell if my helmet is old and I need a 
+                        new one?</div>
+                    <div class="collapse-content">
+                      <p>A helmet is considered old and needs replacing if it's more than 5 years old, shows visible signs of wear and tear on the exterior, has a damaged or deteriorated interior padding, has been involved in a crash, or if the manufacturer recommends replacement based on its age or usage history; most safety organizations suggest following the "5-year rule" for helmets regardless of appearance. </p>
+                    </div>
+                  </div>
+                  <div class="collapse collapse-arrow border border-blue-100 ">
+                    <input type="radio" name="my-accordion-2" />
+                    <div class="collapse-title text-xl font-medium">My bike has been in storage is it safe to ride?</div>
+                    <div class="collapse-content">
+                      <p>Before going on a long ride, take your bike around the block and make sure it is safe to ride. First of all, your tires are going to be deflated, it is normal after long periods of time on storage. Inflate them close to the recommended level, you can find that in the wall of the tire. Make sure your brakes work.</p>
+                    </div>
+                  </div>  
+                  <div class="collapse collapse-arrow border border-blue-100 ">
+                    <input type="radio" name="my-accordion-2" />
+                    <div class="collapse-title text-xl font-medium">What rules should I follow when riding my bike?</div>
+                    <div class="collapse-content">
+                      <p>When riding your bike, you should always wear a helmet, obey traffic lights and signs, ride with the flow of traffic, signal your turns, ride on the right side of the road, yield to pedestrians, and be aware of your surroundings, especially when approaching intersections; ensure your bike has working lights for nighttime visibility, and ride in a single file when cycling with a group. </p>
+                    </div>
+                  </div>  
+            </div>
+            </div>
+          </div>
+
+       </section>
+
 
 
  </main>
@@ -255,4 +302,27 @@
 <footer></footer>
     
 </body>
+
+
+
+<footer class="flex flex-grow justify-evenly">
+        <!-- round avatar -->
+        <div class="avatar"> 
+            <div class="w-24 rounded-full">
+              <img src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.webp" />
+            </div>
+          </div>
+         <!-- rating-star -->
+          <div class="rating">
+          <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />          
+            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+            <input type="image" class="bg-white" src="./images/icons/star-regular.svg" alt="">
+        </div>
+          <!-- primary-color use style -->
+      <div>
+        <p class="text-primary-color">i am bad</p>
+      </div>
+</footer>
 </html>
