@@ -1,20 +1,91 @@
-<section class="flex flex-grow justify-evenly">
-    <!-- round avatar -->
-    <div class="avatar"> 
-        <div class="w-24 rounded-full">
-          <img src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.webp" />
-        </div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice</title>
+    <!-- google poppin font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <!-- daisy ui +tailwind cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
+<script src="https://cdn.tailwindcss.com"></script>
+
+<style>
+    .font-poppins { font-family: "Poppins", serif;}
+    .h3 {
+  text-decoration: underline;
+  text-decoration-thickness: 50%;
+}
+    
+</style>
+<script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
+            'bike-primary': '#E76F51',
+            'bike-primary-bg': 'rgba(231, 111, 81, 0.1)',
+            'primary-color': 'rgb(35, 166, 240)',
+            'primary': 'rgb(35, 166, 240)',
+            
+
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="font-poppins">
+    <main class="md:container md:mx-auto"> 
+        <hr style="height:1px;border-width:0;color:rgb(82, 9, 9);background-color:rgb(86, 5, 5); width: 100px;;margin-left:25%;">
+        
+      
+        <section class="flex flex-grow justify-evenly">
+            <!-- round avatar -->
+            <div class="avatar"> 
+                <div class="w-24 rounded-full">
+                  <img src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.webp" />
+                </div>
+              </div>
+             <!-- rating-star -->
+              <div class="rating">
+              <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />          
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                <input type="image" class="bg-white" src="./images/icons/star-regular.svg" alt="">
+            </div>
+              <!-- primary-color use style -->
+            <div>
+            <p class="text-primary-color">i am bad</p>
+            </div>
+            </section>
+
+<section>
+    <div class="flex w-full flex-col">
+        <div class="divider">Default</div>
+        <div class="divider divider-neutral">Neutral</div>
+        <div class="divider divider-primary">Primary</div>
+        <div class="divider divider-secondary">Secondary</div>
+        <div class="divider divider-accent">Accent</div>
+        <div class="divider divider-success">Success</div>
+        <div class="divider divider-warning">Warning</div>
+        <div class="divider divider-info">Info</div>
+        <div class="divider divider-error w-8 "></div>
       </div>
-     <!-- rating-star -->
-      <div class="rating">
-      <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />          
-        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
-        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
-        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
-        <input type="image" class="bg-white" src="./images/icons/star-regular.svg" alt="">
-    </div>
-      <!-- primary-color use style -->
-    <div>
-    <p class="text-primary-color">i am bad</p>
-    </div>
-    </section>
+      
+      <div class="justify-center items-center">
+        <div class="divider divider-error w-80 ">.</div>
+      </div>
+</section>
+
+
+   
+
+    </main>
+    
+</body>
+</html>
